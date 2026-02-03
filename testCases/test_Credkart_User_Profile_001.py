@@ -214,9 +214,11 @@ class Test_User_Profile :
             assert False, "User Registration Fail"
         self.log.info(f"Testcase test_Credkart_registration_003 is completed")
 
-# pytest -v -s -n=auto --html=Html_reports\my_report_28th_jan_2026.html
+# pytest -v -s -n=auto --html=Html_reports\my_report_31st_jan_2026.html --browser headless
 # pytest -v -s -n=auto --html=Html_reports\my_report_28th_jan_2026.html --alluredir=AllureReports
-
+# pytest -n=auto --html=Html_reports\my_headlessreport_31st_jan_2026.html --browser headlesss -k="test_verify_Credkart_url_001"
+# pytest -n=auto --html=Html_reports\my_firefoxreport_31st_jan_2026.html --browser firefox -k="test_verify_Credkart_url_001"
+# pytest -n=auto --html=Html_reports\my_edgereport_31st_jan_2026.html --browser edge -k="test_verify_Credkart_url_001"
 
 # >pip install allure-pytest
 # Create allure report file from below command:

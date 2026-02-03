@@ -41,9 +41,9 @@ def browser_setup(request): # function
         driver = webdriver.Edge()
     elif browser == "headless":
         print("\nOpening chrome headless browser")
-        chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument("--headless")
-        driver = webdriver.Chrome(options = chrome_options)
+        firefox_options = webdriver.FirefoxOptions()
+        firefox_options.add_argument("--headless")
+        driver = webdriver.Chrome(options = firefox_options)
     else:
         chrome_options = webdriver.ChromeOptions()
         # Create an "options" object for Chrome.
